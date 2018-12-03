@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
+import style from './App.less';
 
 class App extends Component {
+
+  componentDidMount() {
+    axios.get(`https://api.myjson.com/bins/162vrt`)
+      .then(res => {
+        const profile = res.data.profile;
+        const feed = res.data.feed;
+        console.log(profile);
+        console.log(feed);
+        //this.setState({ persons });
+      })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <container className="facebook">
+        <header className="facebook-header">
+
         </header>
-      </div>
+      </container>
     );
   }
 }
