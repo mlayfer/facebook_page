@@ -1,11 +1,139 @@
-.facebook {
-  .facebook-header {
-    position: fixed;
-    top: 0;
-    background-color: #4267b2;
-    border-bottom: 1px solid #29487d;
-    color: #fff;
-    width: 100%;
-    height: 50px;
+body {
+  background: #e9ebee;
+  font-family: Helvetica, Arial, sans-serif;
+  .facebook {
+    .facebook-header {
+      position: fixed;
+      top: 0;
+      background-color: #4267b2;
+      border-bottom: 1px solid #29487d;
+      color: #fff;
+      width: 100%;
+      height: 50px;
+    }
+    .facebook-main {
+      display: block;
+      margin: auto;
+      width: 960px;
+      .facebook-main-header-profile-image {
+        position: relative;
+        float: right;
+        img {
+          position: relative;
+          border-radius: 100%;
+          background-color: #fff;
+          display: block;
+          height: 160px;
+          width: 160px;
+          top: 240px;
+          right: 30px;
+          border-style: solid;
+          border-color: white;
+          border-width: 4px;
+        }
+        .facebook-main-header-username {
+          position: relative;
+          top: 150px;
+          right: 190px;
+          span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+          }
+        }
+      }
+      .facebook-main-header-cover {
+        display: flex;
+      }
+      .facebook-main-base {
+        margin-top: 10px;
+        div {
+          background-color: white;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin-top: 0;
+          li {
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .facebook-main-profile {
+          display: block;
+          width: 33%;
+          margin-bottom: 1%;
+          float: left;
+          .facebook-main-profile-section {
+            padding: 4%;
+            div {
+              font-weight: bold;
+            }
+            .facebook-main-profile-section-inline {
+              display: inline;
+              margin-right: 2%;
+            }
+          }
+        }
+        .facebook-main-feed {
+          display: inline-block;
+          width: 66%;
+          float: right;
+          .facebook-main-feed-addpost {
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: #f2f3f5;
+            padding-bottom: 3%;
+            textarea {
+              width: 80%;
+              margin: auto;
+            }
+            img {
+              display: inline-block;
+              float: left;
+              padding: 3%;
+            }
+          }
+          .facebook-main-feed-title {
+            padding: 2%;
+            font-weight: bold;
+          }
+          li {
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: #f2f3f5;
+            padding: 3%;
+          }
+          img {
+            border-radius: 100%;
+            height: 40px;
+            width: 40px;
+          }
+          .facebook-feed-post-creatorname {
+            color: #365899;
+            cursor: pointer;
+            font-weight: 600;
+            vertical-align: top;
+            margin-left: 2%;
+            font-size: 18px;
+          }
+          .facebook-feed-post-content {
+            padding-top: 4%;
+            padding-bottom: 4%;
+          }
+          .facebook-feed-post-likes {
+            color: #90949c;
+            .facebook-feed-post-commentscount {
+              float: right;
+            }
+          }
+        }
+      }
+    }
   }
 }
+
